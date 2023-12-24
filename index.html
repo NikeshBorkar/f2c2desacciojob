@@ -28,13 +28,13 @@
     <header>
         <nav class="navbar navbar-light bg-white nav-container" id="large-device-nav">
             <div class="container-fluid">
-                <a class="navbar-brand"><img class="logo" src="./assets/quizGurdLogo.svg"></a>
+                <a class="navbar-brand"><img class="logo" src="./Images/quizGurdLogo.svg"></a>
                 <form class="nav-options">
                     <a class="nav-link active" aria-current="page" href="#">How it works?</a>
                     <a class="nav-link" href="#">Features</a>
                     <a class="nav-link" href="#">About us</a>
                     <div class="profile-container" id="profile">
-                        <img class="profile" src="./assets/profile.svg">
+                        <img class="profile" src="./Images/profile.svg">
                         <a href="#" class="name text-decoration-none">Tarun</a>
                     </div>
                     <button type="button" class="login-button">Login</button>
@@ -46,7 +46,7 @@
         
         <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mobile-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/quizGurdLogo.svg"></a>
+                <a class="navbar-brand" href="#"><img src="./Images/quizGurdLogo.svg"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
            
             <div id="home-page">
                 <div class="left-container">
-                    <h1 class="heading">Learn new concepts for each question</h1>
+                    <h1 class="heading">Learn <br> new concepts for each question</h1>
 
                     <div class="home-para">
                         <div class="vertical-line"></div>
@@ -88,11 +88,11 @@
 
                
                 <div class="home-img">
-                    <img src="./assets/homeImg.svg">
+                    <img src="./Images/homeImg.svg">
                 </div>
             </div>
             <div class="d-flex justify-content-start align-items-end line">
-                <img src="./assets/home-line.svg">
+                <img src="./Images/home-line.svg">
             </div>
         </section>
 
@@ -101,7 +101,7 @@
 
             <div id="favourite-topic-section">
                 <div class="close-button-container">
-                    <img id="close-button" onclick="closeTopicsSection()" src="./assets/closeButton.svg">
+                    <img id="close-button" onclick="closeTopicsSection()" src="./Images/closeButton.svg">
                 </div>
                 <div class="favourite-topic-description">
                     <h1>Choose your favorite topic</h1>
@@ -109,26 +109,26 @@
                 </div>
                 <div class="subjects-container">
                     <div>
-                        <button id="subjectButton" onclick="selectingSubject()">General</button>
+                        <button id="subjectButton" onclick="selectingSubject()">General Que</button>
                        
                     </div>
                     <div>
                         <button class="selected-subject">Javascript</button>
-                        <i class="into-mark-icon"><img src="./assets/intomarkIcon.svg"></i>
+                        <i class="into-mark-icon"><img src="./Images/intomarkIcon.svg"></i>
                     </div>
                     <div>
                         <button class="selected-subject">Python</button>
-                        <i class="into-mark-icon selected-subject"><img src="./assets/intomarkIcon.svg"></i>
+                        <i class="into-mark-icon selected-subject"><img src="./Images/intomarkIcon.svg"></i>
                     </div>
                     <div>
-                        <button>Mathematics</button>
+                        <button>Science</button>
                     </div>
                     <div>
                         <button>React JS</button>
                        
                     </div>
                     <div>
-                        <button>Science</button>
+                        <button>Mathematics</button>
                        
                     </div>
                     <div>
@@ -141,19 +141,7 @@
                     </div>
                     <div>
                         <button class="selected-subject">TagBadge</button>
-                        <i class="into-mark-icon"><img src="./assets/intomarkIcon.svg"></i>
-                    </div>
-                    <div>
-                        <button>TagBadge</button>
-                        
-                    </div>
-                    <div>
-                        <button>TagBadge</button>
-                        
-                    </div>
-                    <div>
-                        <button class="selected-subject">TagBadge</button>
-                        <i class="into-mark-icon"><img src="./assets/intomarkIcon.svg"></i>
+                        <i class="into-mark-icon"><img src="./Images/intomarkIcon.svg"></i>
                     </div>
                     <div>
                         <button>TagBadge</button>
@@ -161,7 +149,19 @@
                     </div>
                     <div>
                         <button class="selected-subject">TagBadge</button>
-                        <i class="into-mark-icon"><img src="./assets/intomarkIcon.svg"></i>
+                        <i class="into-mark-icon"><img src="./Images/intomarkIcon.svg"></i>
+                    </div>
+                    <div>
+                        <button class="selected-subject">TagBadge</button>
+                        <i class="into-mark-icon"><img src="./Images/intomarkIcon.svg"></i>
+                    </div>
+                    <div>
+                        <button>TagBadge</button>
+                        
+                    </div>
+                    <div>
+                        <button class="selected-subject">TagBadge</button>
+                        <i class="into-mark-icon"><img src="./Images/intomarkIcon.svg"></i>
                     </div>
                     <div>
                         <button>TagBadge</button>
@@ -192,8 +192,8 @@
 
             <div id="next-question-container">
                 <div id="previous">
-                    <button id="previous-button"><span><img class="p-1"
-                                src="./assets/previousIcon.svg"></span>Previous</button>
+                    <button id="previous-button" onclick="prvQuestion()"><span><img class="p-1"
+                                src="./Images/previousIcon.svg"></span>Previous</button>
                 </div>
 
                 <div id="results-container" class="results">
@@ -205,7 +205,7 @@
                         <button id="next-button" class="custom-button" onclick="nextQuestion()">Next</button>
                     </div>
                     <div id="skip">
-                        <button id="skip-button">skip<spa><img src="./assets/skip.svg"></spa></button>
+                        <button id="skip-button" onclick="skipQuestion()">skip<spa><img src="./Images/skip.svg"></spa></button>
                     </div>
                 </div>
             </div>
